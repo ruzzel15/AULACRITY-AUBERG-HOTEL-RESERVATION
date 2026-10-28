@@ -1,0 +1,181 @@
+/* Shared navbar styles for San Andres Residences */
+.navbar {
+  width: 100%;
+  min-height: 110px;
+  background: linear-gradient(90deg, rgba(19,22,26,0.92) 60%, rgba(34,40,49,0.85) 100%);
+  backdrop-filter: blur(8px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 34px;
+  box-shadow: 0 4px 18px rgba(0,0,0,0.10);
+  border-radius: 0 0 18px 18px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  transition: background 0.3s, box-shadow 0.3s;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  font-size: 2.1rem;
+  font-weight: bold;
+  color: #fff;
+  letter-spacing: 1px;
+  border-radius: 8px;
+  padding: 8px 12px 8px 0;
+  background: none;
+  box-shadow: none;
+  min-width: 0;
+}
+
+.navbar-brand img {
+  height: 64px;
+  width: 64px;
+  object-fit: contain;
+  margin-right: 0;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+  background: none;
+  padding: 0;
+}
+
+.navbar-brand .brand-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 1.1;
+}
+
+.navbar-brand .brand-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.navbar-brand .brand-subtitle {
+  font-size: 1.05rem;
+  font-weight: 400;
+  margin-top: 4px;
+  letter-spacing: 2px;
+  color: #fff;
+  opacity: 0.85;
+}
+
+.navbar-center {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.navbar-center .nav-link {
+  font-size: 1.22rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: #fff;
+  padding: 0 28px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border-radius: 24px;
+  border: 2px solid transparent;
+  background: none;
+  transition: background 0.2s, color 0.2s, border 0.2s, box-shadow 0.2s;
+  position: relative;
+  margin: 0;
+}
+
+.navbar-center .nav-link.active {
+  color: #ffc43b;
+  background: rgba(255,196,59,0.10);
+  border-bottom: 3px solid #ffc43b;
+  border-radius: 24px 24px 0 0;
+  box-shadow: 0 2px 8px rgba(255,196,59,0.08);
+}
+
+.navbar-center .nav-link:hover {
+  background: rgba(255,255,255,0.13);
+  color: #ffc43b;
+  border-bottom: 3px solid #ffc43b;
+}
+
+.navbar-center .nav-link i {
+  font-size: 1.1em;
+  margin-right: 6px;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.navbar-right .nav-link, .navbar-right .btn {
+  border: none;
+  background: linear-gradient(90deg, #ffc43b 60%, #ffde7a 100%);
+  color: #222 !important;
+  border-radius: 10px;
+  padding: 8px 20px;
+  font-weight: 600;
+  font-size: 1rem;
+  box-shadow: 0 2px 8px rgba(255,196,59,0.10);
+  margin-left: 8px;
+  text-align: center;
+  min-width: 90px;
+  display: inline-block;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+}
+
+.navbar-right .nav-link:hover, .navbar-right .btn:hover {
+  background: linear-gradient(90deg, #ffde7a 60%, #ffc43b 100%);
+  color: #13161a !important;
+  box-shadow: 0 4px 16px rgba(255,196,59,0.18);
+}
+
+body {
+  padding-top: 0;
+}
+
+.navbar a, .navbar button {
+  color: #fff;
+  font-weight: bold;
+  margin: 0 20px;
+  text-decoration: none;
+  font-size: 18px;
+  letter-spacing: 2px;
+}
+
+.navbar .active {
+  color: #ffc43b;
+  border-bottom: 2px solid #ffc43b;
+}
+
+.navbar .offer-btn {
+  background: #ffc43b;
+  color: #222;
+  border: none;
+  padding: 16px 32px;
+  border-radius: 2px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.navbar-brand img { height: 48px; margin-right: 10px; }
+.navbar-nav .nav-link { font-weight: 600; letter-spacing: 0.5px; margin: 0 8px; }
+@media (max-width: 991px) {
+  .navbar, .top-bar {
+    padding: 0 8px;
+  }
+  .navbar-center {
+    gap: 4px;
+  }
+  .navbar-center .nav-link {
+    padding: 8px 8px;
+  }
+} 

@@ -1,0 +1,5 @@
+SAMPLE USER ACCOUNTS THAT CURRENTLY EXISTS IN THE DATABASE :
+
+admin : admin@example.com PASS: 1234  
+Test User : user@example.com PASS :1234
+Ruzzel(Me) : ruz@gmail.com PASS: 1234
